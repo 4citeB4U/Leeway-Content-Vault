@@ -131,8 +131,10 @@ export const ContentVault = ({
             transition={{ delay: idx * 0.05 }}
             draggable
             onDragStart={(event) => {
-              event.dataTransfer.setData('application/leeway-content-vault', JSON.stringify(item));
-              event.dataTransfer.effectAllowed = 'copy';
+              if ('dataTransfer' in event && event.dataTransfer) {
+                event.dataTransfer.setData('application/leeway-content-vault', JSON.stringify(item));
+                event.dataTransfer.effectAllowed = 'copy';
+              }
               onDragStart(item);
             }}
             className="group bg-slate-900/50 border border-white/5 rounded-xl overflow-hidden hover:border-brand-primary/30 transition-all cursor-grab active:cursor-grabbing"
