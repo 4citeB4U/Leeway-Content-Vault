@@ -59,7 +59,7 @@ export default function App() {
     void Promise.all(items.map(async item=>{
       try{
         const blob=await readBlob(item.id);
-        if(!blob||!alive||!blob.type.startsWith('image/')) return;
+        if(!blob||!alive||!(blob.type.startsWith('image/') || blob.type.startsWith('audio/') || blob.type.startsWith('video/'))) return;
         const url=URL.createObjectURL(blob);
         urls.push(url);
         if(alive)setPreviews(prev=>({...prev,[item.id]:url}));
@@ -101,7 +101,7 @@ export default function App() {
   };
   const stageHandoff=(destination:HandoffDestination,item:ContentItem)=>{
     try{
-      const packet=buildHandoffPacket({destination,projectId:item.projectId||projectId,item,nodes:[],edges:[]});
+      const packet=buildHandoffPacket({destination,projectId:item.projectId||projectId,item:{...item},nodes:[],edges:[]});
       downloadJson(`leeway-${destination}-handoff-${packet.handoffId}.json`,packet);
       const receiptItem:ContentItem={id:newId(),beastId:packet.handoffId,artifactId:createArtifactId(),
         version:1,projectId,type:'manifest',name:`Handoff to ${destination} — ${item.name}.json`,
