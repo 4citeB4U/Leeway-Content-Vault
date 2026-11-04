@@ -1,0 +1,27 @@
+/*
+LEEWAY HEADER — DO NOT REMOVE
+REGION: LEEWAY.CONTENT_VAULT.STYLE
+TAG: LEEWAY.CONTENT_VAULT.STYLE.FOUNDRY_THEME
+5WH:
+WHAT = Standalone Foundry-inspired Content Vault theme.
+WHY = Preserve inherited dark cards, accent color, upload and filter styling.
+WHO = LeeWay Content Vault engineering.
+WHERE = src/index.css
+WHEN = 2026-11-04
+HOW = Use local system fonts and Tailwind utilities.
+LICENSE = Foundry theme provenance retained; no external font service required.
+*/
+@import "tailwindcss";
+@theme {
+ --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+ --color-brand-primary: #22d3ee;
+ --color-brand-dark: #050a14;
+ --color-brand-surface: #111827;
+ --color-brand-border: rgba(255,255,255,0.1);
+}
+html,body,#root {height:100%;margin:0;}
+body {background:#050a14;color:#e2e8f0;font-family:Inter,ui-sans-serif,system-ui,sans-serif;}
+* {box-sizing:border-box;}
+::-webkit-scrollbar {width:6px;}
+::-webkit-scrollbar-track {background:#050a14;}
+::-webkit-scrollbar-thumb {background:#334155;border-radius:6px;}
