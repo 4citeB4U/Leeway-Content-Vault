@@ -1,5 +1,6 @@
 <!--
 LEEWAY HEADER — DO NOT REMOVE
+DISCOVERY_PIPELINE: Voice → Intent → Location → Vertical → Ranking → Render
 REGION: LEEWAY.REPOSITORY.GOVERNANCE.ENTRYPOINT
 TAG: LEEWAY.AGENT.WORKER.ADMISSION.V1
 5WH:
@@ -9,7 +10,7 @@ WHO = Creator/Human Authority and existing source owner.
 WHERE = AGENTS.md in 4citeB4U/Leeway-Content-Vault.
 WHEN = 2026-11-12.
 HOW = Read original Standards, Engineering, Receipt and Skills; execute only within verified permissions and original mission.
-LICENSE = Existing repository terms; no new license asserted.
+LICENSE: Existing repository terms; no new license asserted.
 -->
 # Mandatory LeeWay Worker Admission
 
@@ -20,3 +21,7 @@ Before each consequential operation define applicable laws/regulations, policies
 Complete Investigate → Diagnose → Plan → Implement → Test → Validate → Repair → Retest → Verify → Evidence → Checkpoint → Continue using approved deterministic Machine Consciousness binding, existing Skill Orchestrator multi-skill weave and bounded authorized focal tools. Concurrent operations require nonconflicting scope and valid grants. Outside contributors BUILD → TEACH → ASSESS; permanent LeeWay agents demonstrate knowledge separately. Existing Workforce/Formula/merit issuer grades performance; no self-awarded badge or privilege.
 
 Use original Runtime workplane and owning issue for handoffs and checkpoints. Maintain device-local Digital Brain and Diagnostics sovereignty. Respect privacy, licensing and existing repo-specific instructions. No source, CI, model response or health-200 equals native deployment/Veritas qualification. Actual host/bootstrap and independent admission tests must be performed before enforcement is claimed.
+
+## Final boundary — effective canonical law and work custody
+
+[Approved LeeWay Standards main](https://github.com/4citeB4U/LeeWay-Standards/commit/2e5e98bdc49cfe0bf180de394db054eaf2f8e3d3) supersedes historical pending PR #71 references. Final handoff requires mission/work/source, scope/grants, evidence FOR/AGAINST, measurements, decisions, corrections, learner practice and next owner/gate. No source or test result self-confers production authority.
